@@ -1,0 +1,14 @@
+pip==25.2
+setuptools==80.9.0
+wheel==0.45.1
+
+# Streamlit version that accepts Pillow 11 (required for Python 3.13)
+streamlit==1.41.1
+
+# All of these have manylinux wheels for cp313
+numpy==2.3.2
+pandas==2.2.3
+pillow==11.3.0
+
+# Only include if you actually need it; this version has cp313 wheels.
+# pyarrow==17.0.0
