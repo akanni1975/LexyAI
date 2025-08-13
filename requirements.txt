@@ -1,0 +1,15 @@
+pip==25.2
+setuptools==80.9.0
+wheel==0.45.1
+
+# Streamlit that allows Pillow 11 (needed on Python 3.13)
+streamlit==1.41.1
+
+# Packages with published cp313 wheels
+numpy==2.3.2
+pandas==2.2.3
+pillow==11.3.0
+openpyxl==3.1.5
+
+# Optional (only if you use it)
+# pyarrow==17.0.0
