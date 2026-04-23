@@ -28,12 +28,15 @@ Optional:
 If FreeTextMap is missing in the new workbook, the app will try to read it from
 a legacy workbook path if available.
 """
+
 from __future__ import annotations
 
 import html
 import os
 import re
 import csv
+import sys
+import importlib.util
 from datetime import datetime
 from difflib import SequenceMatcher
 from typing import Dict, List, Tuple, Set
@@ -349,8 +352,17 @@ def load_runtime_data(workbook_path: str, legacy_workbook_path: str) -> Dict[str
         "freetext_map": free_text_map_df,
     }
 
+st.write("Python version:", sys.version)
+st.write("openpyxl spec:", importlib.util.find_spec("openpyxl"))
+st.write("Workbook path:", WORKBOOK_PATH)
+st.write("Workbook exists:", os.path.exists(WORKBOOK_PATH))
 
-DATA = load_runtime_data(WORKBOOK_PATH, LEGACY_WORKBOOK_PATH)
+try:
+    DATA = load_runtime_data(WORKBOOK_PATH, LEGACY_WORKBOOK_PATH)
+except Exception as e:
+    st.error(f"Startup error: {type(e).__name__}: {e}")
+    st.stop()
+
 db = DATA["runtime"]
 taxonomy_df = DATA["taxonomy"]
 sublogic_df = DATA["sublogic"]
