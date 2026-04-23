@@ -48,7 +48,8 @@ try:
     from PIL import Image
 except Exception:  # pragma: no cover
     Image = None
-
+   
+st.set_page_config(page_title="LEXY — LexMedical AI Triage System", page_icon="🩺", layout="centered")
 
 # ----------------------------
 # Configuration
@@ -359,11 +360,10 @@ sublogic_df = DATA["sublogic"]
 logo = load_logo()
 FT_MAP = load_freetext_map(WORKBOOK_PATH, LEGACY_WORKBOOK_PATH)
 
-
 # ----------------------------
 # Session defaults
 # ----------------------------
-st.set_page_config(page_title="LEXY — LexMedical AI Triage System", page_icon="🩺", layout="centered")
+
 
 st.markdown("""
 <style>
