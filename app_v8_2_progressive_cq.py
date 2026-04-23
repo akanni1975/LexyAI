@@ -4,7 +4,6 @@
 SymptomBot app adapted for the rebuilt multi-sheet workbook.
 
 Key design choices
-------------------
 1) Uses the rebuilt workbook as the source of truth:
    - Taxonomy
    - Subcategory Logic
@@ -407,6 +406,19 @@ st.markdown("""
   border-radius: 10px;
   color: #083b6b;
 }
+
+/* Force green buttons */
+.stButton > button:not([disabled]) {
+  background-color: #486856 !important;
+  color: #ffffff !important;
+  border: 1px solid #486856 !important;
+}
+.stButton > button:not([disabled]):hover {
+  background-color: #3f5b4b !important;
+  border: 1px solid #3f5b4b !important;
+  color: #ffffff !important;
+}
+
 @media (max-width: 640px) {
   .report-block, .emergency-block {
     font-size: 1.05rem;
