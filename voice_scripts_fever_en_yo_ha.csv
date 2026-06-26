@@ -1,0 +1,18 @@
+script_key,context,english_spoken,yoruba_spoken,hausa_spoken,expected_response_type,risk_flag
+opening,session,"Hello. Welcome to Lexy, your AI health assistant. I will ask you a few questions to better understand how you feel.","Ẹ káàbọ̀. Èmi ni Lexy, olùrànlọ́wọ́ ìlera yín. Màá bi yín ní ìbéèrè díẹ̀ kí n lè mọ ohun tó ń ṣe yín dáadáa.","Sannu da zuwa. Ni ne Lexy, mai taimaka maka kan lafiya. Zan yi maka wasu tambayoyi domin in fahimci abin da ke damunka.",,
+safety,session,"If you are finding it very hard to breathe, bleeding heavily, having seizures, or feeling like you may collapse, please seek emergency care immediately.","Bí ó bá nira gan-an fún yín láti mí, tàbí ẹ̀jẹ̀ ń jáde púpọ̀, tàbí ẹ ń ní ìfarapa bíi seizure, tàbí ẹ fẹ́ dákú, ẹ jọ̀ọ́ lọ gba ìtọ́jú pajawiri lẹ́sẹ̀kẹsẹ̀.","Idan numfashi yana yi maka wahala sosai, ko kana zubar da jini sosai, ko kana samun farfadiya, ko kana jin kamar za ka fadi, ka nemi taimakon gaggawa nan take.",,red
+ask_main_symptom,fever,"Please tell me what is bothering you today.","Jọ̀ọ́ sọ fún mi ohun tó ń ṣe yín lónìí.","Don Allah, gaya min abin da ke damunka yau.",free_text,
+ack_fever,fever,"I understand. I will ask you a few questions about the fever.","Mo gbọ́. Màá bi yín ní ìbéèrè díẹ̀ nípa iba náà.","Na fahimta. Zan yi maka wasu tambayoyi game da zazzabin.",,
+q_fever_duration,fever,"How many days have you had the fever?","Ọjọ́ mélòó ni iba yìí ti ń ṣe yín?","Kwana nawa kenan kana jin wannan zazzabin?",duration,
+q_temperature_measured,fever,"Have you checked your temperature with a thermometer?","Ṣé ẹ ti fi thermometer wọn iwọn otutu ara yín?","Ka taba auna zafin jikinka da thermometer?",yes_no,
+q_chills,fever,"Are you having chills or feeling unusually cold?","Ṣé òtútù ń mú yín tàbí ara yín ń mì?","Kana jin sanyi sosai ko jikinka yana rawa?",yes_no,
+q_cough,fever,"Do you have a cough?","Ṣé ẹ ní ikọ̀?","Kana da tari?",yes_no,
+q_breathing,fever,"Are you finding it hard to breathe?","Ṣé ó nira fún yín láti mí?","Numfashi yana yi maka wahala?",yes_no,red
+q_vomiting,fever,"Have you been vomiting repeatedly?","Ṣé ẹ ti ń bì léraléra?","Kana amai akai-akai?",yes_no,amber
+q_drinking,fever,"Are you able to drink water normally?","Ṣé ẹ lè mu omi dáadáa?","Kana iya shan ruwa yadda ya kamata?",yes_no,amber
+q_pregnant,fever,"Are you pregnant?","Ṣé ẹ lóyún?","Kina da ciki?",yes_no,amber
+recommend_today,fever,"Thank you. Based on your answers, your fever should be assessed by a healthcare provider today. Drink clean fluids, rest, and avoid taking medicines you are not sure about. If breathing becomes difficult, vomiting continues, confusion starts, or you become very weak, seek emergency care immediately.","Ẹ ṣé. Gẹ́gẹ́ bí ìdáhùn yín ṣe rí, ó yẹ kí onímọ̀ ìlera ṣàyẹ̀wò iba yìí lónìí. Ẹ máa mu omi tó mọ́, ẹ sinmi, ẹ sì yẹra fún lílo oogun tí ẹ kò dájú nípa rẹ̀. Bí mími bá nira, bí ìbì bá ń tẹ̀síwájú, bí ìdààmú ọpọlọ bá bẹ̀rẹ̀, tàbí bí ara bá rẹ yín gan-an, ẹ lọ gba ìtọ́jú pajawiri lẹ́sẹ̀kẹsẹ̀.","Na gode. Bisa amsoshinka, ya kamata ma’aikacin lafiya ya duba wannan zazzabin yau. Ka sha ruwa mai tsafta, ka huta, kuma kada ka sha maganin da ba ka da tabbaci a kansa. Idan numfashi ya fara wahala, amai ya ci gaba, rudani ya fara, ko ka ji rauni sosai, ka nemi taimakon gaggawa nan take.",,
+connect_doctor,carekonnect,"Would you like me to connect you to a doctor now?","Ṣé ẹ fẹ́ kí n so yín pọ̀ mọ́ dokita báyìí?","Kana so in haɗa ka da likita yanzu?",yes_no,
+button_yes,ui,"Yes","Bẹ́ẹ̀ni","Eh",button,
+button_not_now,ui,"Not now","Kì í ṣe báyìí","Ba yanzu ba",button,
+not_understood,session,"I did not understand that clearly. Please say it again.","Mi ò gbọ́ dáadáa. Ẹ jọ̀ọ́ tún sọ ọ.","Ban fahimta sosai ba. Don Allah ka sake fada.",,
